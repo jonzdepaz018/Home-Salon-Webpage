@@ -78,20 +78,23 @@ p{
 }
 .about-flex{
     display: flex;
+    gap:50px;
 }
 .photo-one{
     max-width: 450px;
-    padding-right: 40px;
 }
 .graph-two{
     color: #000000
+}
+.text-flex{
+    padding-left: 50px;
 }
 
 /*------------Available Services--------------*/
 
 #available-services{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: #FFF;
     background-position: center;
     background-size: cover;
@@ -101,30 +104,19 @@ p{
 }
 .header-three{
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     font-size: 60px;
     display: flex;
     justify-content: center;
 }
-.graph-three{
-    color: #000000;
-    text-align: center;
-}
-.table-flex{
+.avail-service{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 30px;
 }
-.card{
-    width: 500px;
-    height: 400px;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.icons{
-    max-width: 150px;
-    max-height: 150px;
-    margin: 30px;
+.service-one{
+    border-radius: 20px;
+    max-width: 550px;
 }

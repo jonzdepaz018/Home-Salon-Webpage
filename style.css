@@ -137,3 +137,95 @@ p{
     border-radius: 20px;
     max-width: 550px;
 }
+
+/*------------For Small Screen--------------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    .logo{
+        width: 150px;
+        cursor: pointer;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 570px;
+    }
+    h1{
+        font-size: 40px;
+        padding-bottom: 27px;
+    }
+    h1 span{
+        color: #CA79B1;
+    }
+    h1 span1{
+        color: #73a8d9;
+    }
+    p{
+        color: #000000;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 30px;
+    }
+    nav ul{
+        background: #73a8d9;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    #about-us{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .about-flex{
+        gap: 10px;
+    }
+    .text-flex{
+        display: inline-block;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .photo-one{
+        max-width: 170px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-three{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 31px;
+    }
+    .service-one{
+        max-width: 350px;
+    }
+    .avail-service{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

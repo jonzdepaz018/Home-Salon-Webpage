@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raven.& Spa and Salon</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -11,14 +12,16 @@
     <div id="homepage">
         <div class="container">
             <div class="navbar">
-                <a href="https://www.facebook.com/danikaross.caluag"><img src="images/logo.png" class="logo"></a>
+                <a href="https://www.facebook.com/profile.php?id=100095613814114&mibextid=ZbWKwL"><img src="images/logo.png" class="logo"></a>
                 <nav>
-                    <ul>
+                    <ul id="sidemenu">
                         <li><a href="#homepage">Home</a></li>
                         <li><a href="#about-us">About Us</a></li>
                         <li><a href="#available-services">Available Services</a></li>
-                        <li><a href="https://www.facebook.com/danikaross.caluag">Facebook Page</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100095613814114&mibextid=ZbWKwL">Facebook Page</a></li>
+                        <i class="fa-solid fa-xmark fa-lg" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
             </div>
             <div data-aos="zoom-in">
@@ -75,9 +78,20 @@
         </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/fb6e4e98c3.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+        var sidemeu = document.getElementById ("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
     </script>
 </body>
 </html>

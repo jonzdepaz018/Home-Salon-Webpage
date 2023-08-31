@@ -38,7 +38,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #3f3ca0;
     font-size: 19px;
     position: relative;
 }
@@ -47,7 +47,7 @@ nav ul li a::after{
     width: 0;
     height: 3px;
     position: absolute;
-    background: #000000;
+    background: #3f3ca0;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
@@ -72,7 +72,7 @@ h1 span1{
     color: #73a8d9;
 }
 p{
-    color: #fff;
+    color: #3f3ca0;
     font-size: 21px;
     line-height: 25px;
     
@@ -111,7 +111,7 @@ p{
 
 #available-services{
     width: 100%;
-    height: 100vh;
+    height: 185vh;
     background-color: #FFF;
     background-position: center;
     background-size: cover;
@@ -128,6 +128,7 @@ p{
 }
 .avail-service{
     display: flex;
+    
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -138,7 +139,48 @@ p{
     max-width: 550px;
 }
 
-/*------------For Small Screen--------------*/
+/*------------Contact Us--------------*/
+#contact-us{
+    width: 100%;
+    height: 90vh;
+    background-color: #FFF;
+    background-position: center;
+    background-size: cover;
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+    padding-top: 300px;
+}
+.header-four{
+    font-size: 60px;
+}
+.information{
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.text{
+    text-align: center;
+}
+.socials i{
+    font-size: 50px;
+}
+.text-link{
+    padding-left: 10px;
+}
+.text-link a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #73a8d9;
+}
+.text-link .number{
+    text-decoration: none;
+    font-size: 20px;
+    color: #73a8d9;
+}
+
 /*------------For Small Screen--------------*/
 nav .fa-solid{
     display: none;
@@ -181,6 +223,7 @@ nav .fa-solid{
     }
     nav ul{
         background: #73a8d9;
+        border-radius: 10px;
         position: fixed;
         top: 0;
         right: -200px;
@@ -192,12 +235,14 @@ nav .fa-solid{
     }
     nav ul li{
         display: block;
-        margin: 25px;
+        margin-right: 20px;
+        margin-top: 30px;
+        
     }
     nav ul .fa-solid{
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 35px;
+        right: 20px;
         cursor: pointer;
     }
     #about-us{ 
@@ -229,4 +274,37 @@ nav .fa-solid{
         flex-direction: column;
         gap: 10px;
     }
+    #contact-us{
+        height: 180vh;
+        padding-top: 700px;
+    }
+    .header-four{
+        font-size: 40px;
+    }
+    .information{
+        padding-top: 25px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .socials i{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .text-link a{
+        text-decoration: none;
+        font-size: 17px;
+        color: #73a8d9;
+    }
+    .text-link .number{
+        text-decoration: none;
+        font-size: 15px;
+        color: #73a8d9;
+    }
+    
 }

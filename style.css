@@ -142,48 +142,58 @@ p{
 /*------------Contact Us--------------*/
 #contact-us{
     width: 100%;
-    height: 110vh;
+    height: 75vh;
     background-color: #FFF;
     background-position: center;
     background-size: cover;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
     box-sizing: border-box;
-    padding-top: 300px;
-}
-.header-four{
-    font-size: 55px;
-}
-h2{
-    font-size: 20px;
-}
-.information{
-    padding-top: 50px;
-    padding-left: 50px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
 }
 .text{
+    padding-top: 10%;
+    display: flex;
     text-align: center;
-}
-.socials i{
-    font-size: 50px;
+    justify-content: center;
 }
 .text-link{
-    padding-left: 10px;
+    text-align: center;
 }
-.text-link a{
+a{
     text-decoration: none;
-    font-size: 20px;
-    color: #73a8d9;
+    color: #000000;
 }
-.text-link .number{
-    text-decoration: none;
+.text-two{
     font-size: 20px;
-    color: #73a8d9;
 }
-
+.table{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+.socials{
+    margin: 25px;
+    font-size: 50px;
+    text-align: center;
+}
+.button{
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    border: 1px solid #000000;
+    padding: 14px 20px;
+    border-radius: 6px;
+    background: #e671ab;
+}
+.button-one{
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    border: 1px solid #000000;
+    padding: 14px 80px;
+    border-radius: 6px;
+    background: #e671ab;
+}
 /*------------For Small Screen--------------*/
 nav .fa-solid{
     display: none;
@@ -278,36 +288,22 @@ nav .fa-solid{
         gap: 10px;
     }
     #contact-us{
-        height: 180vh;
+        height: 225vh;
         padding-top: 700px;
     }
     .header-four{
         font-size: 40px;
     }
-    .information{
-        padding-top: 25px;
+    .table{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         gap: 10px;
-        align-items: center;
-    }
-    .text{
-        text-align: center;
-    }
-    .socials i{
-        font-size: 30px;
     }
     h2{
-        font-size: 18px;
+        font-size: 22px;
     }
-    .text-link a{
-        text-decoration: none;
-        font-size: 17px;
-        color: #73a8d9;
+    .text-two{
+        font-size: 20px;
     }
-    .text-link .number{
-        text-decoration: none;
-        font-size: 15px;
-        color: #73a8d9;
-    }
-    
 }
